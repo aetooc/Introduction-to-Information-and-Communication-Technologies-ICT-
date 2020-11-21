@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <title>Suggestions</title>
+        <style>
+            body{
+            font-family: latha;
+            color:white;
+            background: linear-gradient( rgba(0,0,0,0.65),rgba(0,0,0,0.65),rgba(0,0,0,0.38),rgba(0,0,0,0)
+            )
+                ,url(fooddd.jpg)no-repeat;
+            background-size: cover;
+            
+        }
+    
+        .box{ width: 900px;
+        float:right;
+        border:1px solid none;}
+        
+        .box ul li{
+            width: 120px;
+            float:left;
+            margin: 10px auto;
+            text-align: center;
+        }
+        
+        .box ul li a{ text-decoration: none;
+        color:darkgray;}
+        
+        .box ul li:hover{ background-color: green;}
+        .box ul li a:hover{ color:white;}
+        
+        .wd{
+            width: 300px;
+            height: 539px;
+            background-color: black;
+            opacity: 0.9;
+            padding: 55px;
+        }
+        
+        .wd h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 100px;
+        }
+        
+        .wd h4{
+            text-align: justify;
+            color:darkgray;
+            font-weight: normal;
+        }
+    
+        .wd h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: normal;
+            margin: 40px auto;
+        }
+        
+        .opt form , input[type="button"]{
+            background-color: black;
+            color:white;
+            padding:10px;
+            margin:-14px auto;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: center;
+        }
+        
+        form, input[type="button"]:hover{background-color: goldenrod;}
+
+        .logo {
+    text-indent: -999999px;
+    background: url('logo.png');
+    width: 360px;
+    height: 81px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+}
+section {
+  height: 100vh;
+  width: 100%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+        </style>
+        <body>
+            <div class="box">
+                <ul type="none">
+                    <li><a href="index1.html"> Home</a></li>
+                    <li><a href="menu.html"> Menu</a></li>
+                    <li><a href="online_order.html"> Contact</a></li>
+                    <li><a href="image_gallery.html"> Image Gallery</a></li>
+                    <li><a href="contact_us .html"> Suggestions</a></li>
+                    <li><a href="about__us.html"> About Us</a></li>
+                    </ul>
+                </div>
+
+                <h1 class="logo">LOGO HERE</h1>
+
+                <section>
+                    <div class="container">
+                      <form action="https://formspree.io/mbjzbwaj" method="POST" id="my-form">
+                  
+                        <div class="form-group">
+                          <label for="firstName"> First Name</label>
+                          <input type="text" id="firstName" name="firstName">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="latsName">Last Name</label>
+                          <input type="text" id="lastName" name="lastName">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" id="email" name="email">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="massage">Message</label>
+                          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                        </div>
+                  
+                        <button type="submit">Submit</button>
+                      </form>
+                    </div>
+                    <div id="status"></div>
+                  </section>
+        </body>
+    </head>
+</html>
